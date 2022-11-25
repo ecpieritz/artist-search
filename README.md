@@ -17,7 +17,7 @@
 - HTML
 - Typescript
 - React
-- SASS
+- Bootstrap
 
 ---
 
