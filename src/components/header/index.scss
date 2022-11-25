@@ -1,0 +1,36 @@
+.header{
+  background-color: #3c73a7;
+  padding: 20px 60px;
+  margin: auto; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__made-by{
+    p{
+      margin: 0;
+      color: #fff;
+      a{
+        color: #0c365e;
+        &:hover{
+          color: #500c5e;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__search{
+    width: 75%;
+    input{
+      width: 100%;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 8px;
+      color: #0c365e;
+      &::placeholder{
+        color: #0c365e;
+      }
+    }
+  }
+}
