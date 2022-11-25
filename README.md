@@ -13,10 +13,10 @@
 ---
 
 ## 🛠 Technologies used
-- CSS
 - HTML
 - Javascript
 - React
+- Redux
 - Bootstrap
 - SASS/SCSS
 
