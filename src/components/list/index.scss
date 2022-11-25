@@ -1,0 +1,42 @@
+.list{
+  background-color: #b1c4d6;
+  padding: 30px 15px;
+  border-radius: 8px;
+  width: 100%;
+
+  &__item{
+    width: 100%;
+    margin-bottom: 20px;
+    
+    &__thumbnail{
+      max-width: 100%;
+      
+      img{
+        margin-bottom: 5px;
+        border-radius: 8px;
+        width: 100%; 
+      }
+
+      &:hover{
+        opacity: .8;
+        img{
+          transition: .5s ease all
+        }
+      }
+    }
+
+    &__title{
+      a{
+        color: #0c365e;
+        &:hover{
+          color: #500c5e;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &:last-child{
+      margin-bottom: 0px;
+    }
+  }
+}
