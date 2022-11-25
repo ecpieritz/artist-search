@@ -15,7 +15,7 @@
 ## 🛠 Technologies used
 - CSS
 - HTML
-- Typescript
+- Javascript
 - React
 - Bootstrap
 - SASS/SCSS
