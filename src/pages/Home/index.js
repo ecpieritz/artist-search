@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import "./index.scss"
+import {Provider} from 'react-redux';
+import store from '../../store'
+import "./index.scss";
 import Header from "../../components/header";
 import List from "../../components/list";
 import Video from "../../components/video";
@@ -8,6 +10,7 @@ class Home extends Component {
   render() {
     return (
       <>
+      <Provider store={store}>
         <Header />
         <div className="container">
           <div className="row">
@@ -15,6 +18,7 @@ class Home extends Component {
             <List />
           </div>
         </div>
+      </Provider>
       </>
     )
   }

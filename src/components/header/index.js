@@ -2,6 +2,14 @@ import React, { Component } from "react";
 import "./index.scss"
 
 class Header extends Component {
+
+  searchInput = event => {
+    if(event.keyCode === 13){
+      const value = event.target.value
+      console.log(value)
+    }
+  }
+
   render() {
     return (
       <header className="header">
@@ -10,7 +18,8 @@ class Header extends Component {
         </div>
 
         <div className="header__search">
-          <input type="text" placeholder="Which artist do you want to find?" />
+          <input type="text" placeholder="Which artist do you want to find?"
+            onKeyDown={(event) => this.searchInput(event)} />
         </div>
       </header>
     )
