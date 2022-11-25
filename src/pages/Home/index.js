@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import "./index.scss"
 import Header from "../../components/header";
 import List from "../../components/list";
+import Video from "../../components/video";
 
 class Home extends Component {
   render() {
@@ -9,7 +11,7 @@ class Home extends Component {
         <Header />
         <div className="container">
           <div className="row">
-            <div>video</div>
+            <Video />
             <List />
           </div>
         </div>
