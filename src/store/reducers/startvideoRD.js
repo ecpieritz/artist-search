@@ -3,7 +3,7 @@ const SET_STATE = {
 }
 
 export default function startVideo(state = SET_STATE, action) {
-  if (action/*,type*/ === "START_VIDEO") {
+  if (action.type === "START_VIDEO") {
     return {
       videos: action.videos
     }

@@ -9,19 +9,15 @@
     margin-bottom: 20px;
     
     &__thumbnail{
-      max-width: 100%;
+      margin-bottom: 5px;
+      border-radius: 8px;
+      width: 100%; 
       
-      img{
-        margin-bottom: 5px;
-        border-radius: 8px;
-        width: 100%; 
-      }
 
       &:hover{
         opacity: .8;
-        img{
-          transition: .5s ease all
-        }
+        transition: .5s ease all;
+        cursor: pointer;
       }
     }
 

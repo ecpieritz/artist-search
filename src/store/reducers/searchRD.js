@@ -5,7 +5,7 @@ const SET_STATE = {
 }
 
 export default function search (state = SET_STATE, action){
-  switch(action/*,type*/){
+  switch(action.type){
     case 'SEARCH_VIDEO':
       return{
         videos:[],
