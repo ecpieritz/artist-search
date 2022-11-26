@@ -8,9 +8,9 @@ class List extends Component {
   loadListVideos(video) {
     return (
       <div className="list__item" onClick={() => this.props.start(video)} key={video.etag}>
-        <img className="list__item__thumbnail" src={video.snippet.thumbnails.default.url} alt="" />
+        <img  className="list__item__thumbnail" src={video.snippet.thumbnails.default.url} alt="" />
         <div className="list__item__title">
-          <a href="#"><strong>{video.snippet.title}</strong></a>
+          <strong>{video.snippet.title}</strong>
         </div>
       </div>
     )

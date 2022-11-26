@@ -16,10 +16,7 @@ class Video extends Component {
 
           {
             this.props.video && (
-              <ReactPlayer 
-                url={"https://www.youtube.com/watch?v=" 
-                + this.props.video.id.videoId} 
-                width='100%' height='450px' />
+              <ReactPlayer url={"https://www.youtube.com/watch?v=" + this.props.video.id.videoId} width='100%' height='450px' />
             )
           }
         </div>
