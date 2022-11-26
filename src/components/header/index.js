@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import {connect} from 'react-redux';
+import {searchVideo} from '../../store/actions/searchAC'
 import "./index.scss"
 
 class Header extends Component {
@@ -7,6 +9,7 @@ class Header extends Component {
     if(event.keyCode === 13){
       const value = event.target.value
       console.log(value)
+      this.props.searchVideo(value)
     }
   }
 
@@ -26,4 +29,12 @@ class Header extends Component {
   }
 };
 
-export default Header;
+const mapDispatchToProps = (dispatch)=>{
+  return{
+    searchVideo: (params) => dispatch(
+      searchVideo(params)
+    )
+  }
+}
+
+export default connect(null, mapDispatchToProps) (Header);
