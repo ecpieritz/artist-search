@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
+import {startVideo} from '../../store/actions/startvideoAC';
+
 import "./index.scss"
 
 class List extends Component {
   loadListVideos(video) {
     return (
-      <div className="list__item">
+      <div className="list__item" onClick={()=> this.props.start(video)} key={video.etag}>
         <a className="list__item__thumbnail" href="#">
           <img src={video.snippet.thumbnails.default.url} alt="" />
         </a>
@@ -27,6 +29,12 @@ class List extends Component {
   }
 };
 
+const mapDispatchToProps = (dispatch)=>{
+  return{
+    start: (video)=> dispatch(startVideo(video))
+  }
+}
+
 const mapStateToProps = (state => {
   return {
     videos: state.search.videos,
@@ -35,4 +43,4 @@ const mapStateToProps = (state => {
   }
 })
 
-export default connect(mapStateToProps, null)(List)
+export default connect(mapStateToProps, mapDispatchToProps)(List)
